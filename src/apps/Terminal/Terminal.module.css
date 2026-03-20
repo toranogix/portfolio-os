@@ -1,0 +1,52 @@
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--terminal-bg);
+  color: var(--terminal-text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  padding: 6px;
+  cursor: text;
+}
+
+.output {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 4px;
+}
+
+.lineInput {
+  color: var(--terminal-prompt);
+  white-space: pre-wrap;
+  margin-bottom: 2px;
+}
+
+.lineOutput {
+  color: var(--terminal-text);
+  white-space: pre-wrap;
+  margin-bottom: 6px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-top: 4px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.prompt {
+  color: var(--terminal-prompt);
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--terminal-text);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  caret-color: var(--terminal-text);
+}

@@ -1,0 +1,39 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  background: var(--win-bg);
+  color: var(--text);
+  font-family: var(--font-os);
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+
+  border-top: 1px solid var(--win-border-light);
+  border-left: 1px solid var(--win-border-light);
+  border-right: 1px solid var(--win-border-darker);
+  border-bottom: 1px solid var(--win-border-darker);
+  outline: 1px solid var(--win-border-dark);
+}
+
+.btn:active,
+.active {
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+  outline-color: var(--win-border-dark);
+}
+
+.btn:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+
+.small {
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+.icon {
+  font-size: 14px;
+  line-height: 1;
+}

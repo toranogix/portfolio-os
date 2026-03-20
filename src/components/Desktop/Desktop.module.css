@@ -1,0 +1,63 @@
+.desktop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--os-bg);
+  overflow: hidden;
+
+  /* Pattern like Win95 */
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,0.03) 0px,
+      rgba(0,0,0,0.03) 1px,
+      transparent 1px,
+      transparent 6px
+    );
+}
+
+/* Icons column */
+.icons {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 10;
+}
+
+/* Single icon */
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 6px;
+  cursor: default;
+  width: 80px;
+  text-align: center;
+  color: #fff;
+  font-family: var(--font-os);
+}
+
+.iconSelected {
+  background: rgba(0, 0, 128, 0.5);
+  border: 1px dotted #fff;
+}
+
+.iconEmoji {
+  font-size: 32px;
+  display: block;
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.6));
+}
+
+.iconLabel {
+  font-size: 11px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+  word-break: break-word;
+  line-height: 1.3;
+}

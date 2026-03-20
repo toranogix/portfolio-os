@@ -1,0 +1,131 @@
+.window {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: var(--win-bg);
+  border-top: 2px solid var(--win-border-light);
+  border-left: 2px solid var(--win-border-light);
+  border-right: 2px solid var(--win-border-darker);
+  border-bottom: 2px solid var(--win-border-darker);
+  outline: 1px solid #000;
+  min-width: 220px;
+  min-height: 120px;
+}
+
+/* ---- Title bar ---- */
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--titlebar-bg);
+  color: var(--titlebar-text);
+  padding: 2px 2px 2px 4px;
+  height: var(--titlebar-h);
+  flex-shrink: 0;
+  cursor: move;
+  touch-action: none;
+}
+
+.titlebar-inactive {
+  background: var(--titlebar-bg-inactive);
+}
+
+.titlebarLeft {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+}
+
+.titlebarIcon {
+  font-size: 14px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.titlebarText {
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---- Close / Minimise buttons ---- */
+.titlebarButtons {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.tbBtn {
+  width: 18px;
+  height: 18px;
+  background: var(--win-bg);
+  color: var(--text);
+  border-top: 1px solid var(--win-border-light);
+  border-left: 1px solid var(--win-border-light);
+  border-right: 1px solid var(--win-border-darker);
+  border-bottom: 1px solid var(--win-border-darker);
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: var(--font-os);
+  padding: 0;
+}
+
+.tbBtn:active {
+  border-color: var(--win-border-darker) var(--win-border-light) var(--win-border-light) var(--win-border-darker);
+}
+
+/* ---- Content area ---- */
+.content {
+  flex: 1;
+  overflow: auto;
+  background: var(--win-bg);
+  border-top: 1px solid var(--win-border-dark);
+  border-left: 1px solid var(--win-border-dark);
+  border-right: 1px solid var(--win-border-light);
+  border-bottom: 1px solid var(--win-border-light);
+  margin: 2px;
+  position: relative;
+}
+
+/* ── Resize handles ── */
+.resizeEdge {
+  position: absolute;
+  z-index: 20;
+  touch-action: none;
+}
+
+/* Right edge */
+.resizeE {
+  top: 8px;
+  right: -4px;
+  width: 8px;
+  bottom: 8px;
+  cursor: ew-resize;
+}
+
+/* Bottom edge */
+.resizeS {
+  left: 8px;
+  bottom: -4px;
+  height: 8px;
+  right: 8px;
+  cursor: ns-resize;
+}
+
+/* Bottom-right corner */
+.resizeSE {
+  bottom: -4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
+  cursor: nwse-resize;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

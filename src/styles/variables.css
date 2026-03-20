@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'ByteBounce';
+  /* src: url('/fonts/bytebounce/ByteBounce.ttf') format('truetype'); */
+  src: url('/fonts/RetroByte.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Base colors */
+  --os-bg: #008080;
+  --os-bg-alt: #007070;
+
+  /* Window chrome */
+  --win-bg: #c0c0c0;
+  --win-border-light: #ffffff;
+  --win-border-dark: #808080;
+  --win-border-darker: #404040;
+  --win-shadow: 2px 2px 0 0 #000000;
+
+  /* Title bar */
+  --titlebar-bg: #000080;
+  --titlebar-bg-inactive: #808080;
+  --titlebar-text: #ffffff;
+  --titlebar-h: 24px;
+
+  /* Taskbar */
+  --taskbar-bg: #c0c0c0;
+  --taskbar-h: 36px;
+  --taskbar-border: #ffffff;
+
+  /* Start menu */
+  --start-bg: #c0c0c0;
+  --start-accent: #000080;
+
+  /* Text */
+  --text: #000000;
+  --text-inverse: #ffffff;
+  --text-muted: #444444;
+  --text-link: #0000cc;
+
+  /* Icons */
+  --icon-size: 48px;
+
+  /* Input */
+  --input-bg: #ffffff;
+  --input-border: #808080;
+
+  /* Terminal */
+  --terminal-bg: #000000;
+  --terminal-text: #00ff00;
+  --terminal-prompt: #00aaff;
+
+  /* Scrollbar */
+  --scrollbar-w: 16px;
+  --scrollbar-bg: #c0c0c0;
+  --scrollbar-thumb: #a0a0a0;
+
+  /* Misc */
+  --font-os: 'ByteBounce', 'Segoe UI', 'Arial', sans-serif;
+  --font-mono: 'ByteBounce', 'Courier New', monospace;
+  --radius-sm: 0px;
+  --radius-md: 2px;
+  --z-window: 100;
+  --z-taskbar: 500;
+  --z-startmenu: 600;
+  --z-tooltip: 700;
+}
